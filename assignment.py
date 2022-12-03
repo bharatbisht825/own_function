@@ -7,3 +7,6 @@
 l=[1,2,3,4]
 l=l[::-1]
 print(l)
+s=set(l)
+li=list(s)
+print(type(li))
