@@ -5,10 +5,9 @@ class dget:
         if (type(a)==dict):
             self.old_dict=a
     def dget(self,b):
-        di={}
         for k,v in self.old_dict.items():
-            di[i]=b
-
-        logging.info(f"the is new dictionary {di} ")
-a=dget([1,2,3,4,5])
-a.dget(2)
+            if(k==b):
+                the_value=v
+        logging.info(f"the value im the dictionary is {the_value} ")
+a=dget({"a":1,"b":2})
+a.dget("b")
