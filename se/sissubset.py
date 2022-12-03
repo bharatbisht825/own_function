@@ -17,8 +17,7 @@ try:
                 for i in b:
                     if i in (self.old_set):
                             count=count+1
-                                                
-                   
+                                                                   
             else:
                 raise Exception("this is not a set")
             if(len(b)==count or len(b)==0):
